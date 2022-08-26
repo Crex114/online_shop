@@ -1,0 +1,21 @@
+.collection {
+    &-item {
+        height: 50px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition: all linear .2s;
+    }
+    &-item:hover {
+        background: #f7f7f7;
+      }
+    &-img {
+        width: 48px;
+        height: 48px;
+        display: inline;
+        margin-right: 20px;
+    }
+    &-title {
+        display: inline;
+        color: #000;
+    }
+}

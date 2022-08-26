@@ -1,0 +1,56 @@
+.device-page {
+    &__img {
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    &__descr {
+        &__title {
+            h1 {
+                font-size: 30px;
+            }
+
+            margin-bottom: 30px;
+        }
+
+        &__price {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        &__btn {
+            button {
+                color: #000;
+                background-color: #ffda33;
+                border: none;
+                outline: 0;
+                font-size: 17px;
+                font-weight: 500;
+                width: 150px;
+                height: 50px;
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    &__info-title {
+        width: 232px;
+        padding: 20px 40px;
+        border-bottom: 2px solid #ffda33;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: end;
+        gap: 1rem;
+        padding: 10px 0 10px 40px;
+        border-bottom: 1px solid #d8d8d8;
+    }
+}

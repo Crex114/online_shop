@@ -1,0 +1,43 @@
+.auth {
+    border: 2px solid #d8d8d8;
+    border-radius: 5px;
+    width: 500px;
+    transform: translate(-45%, 0%);
+    padding: 20px 40px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+
+    &-content {
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            input {
+                margin-bottom: 10px;
+                border: 2px solid #d8d8d8;
+                border-radius: 5px;
+                height: 40px;
+            }
+
+            button {
+                height: 40px;
+                color: #000;
+                background-color: #ffda33;
+                border: none;
+                outline: 0;
+                align-items: center;
+                font-size: 20px;
+                padding: 0 10px;
+            }
+        }
+    }
+
+}
