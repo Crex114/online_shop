@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Context } from "../../index";
+import { ContextFilteredDevices } from '../../App';
 import { ADMIN_ROUTE, BASKET_ROUTE, LOGIN_ROUTE, SHOP_ROUTE } from "../../utils/consts";
 import { observer } from "mobx-react-lite";
 import { useHistory, Link } from 'react-router-dom'
@@ -9,7 +10,12 @@ import Logo from '../../assets/logo/Logo.svg'
 
 const NavBar = observer(() => {
     const { user } = useContext(Context)
+    const { setValue } = useContext(ContextFilteredDevices)
     const history = useHistory()
+
+    const handleNameChange = (e) => {
+        setValue(e.target.value)
+    }
 
     const logOut = () => {
         user.setUser({})
@@ -33,7 +39,7 @@ const NavBar = observer(() => {
                 </div>
                 <div className="header__search">
                     <form action="">
-                        <input type="text" placeholder='Поиск'/>
+                        <input type="text" placeholder='Поиск' onChange={handleNameChange} />
                         <button type='submit'></button>
                     </form>
                 </div>
