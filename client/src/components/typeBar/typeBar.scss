@@ -1,21 +1,30 @@
 .collection {
     &-item {
-        height: 50px;
+        height: 40px;
         margin-bottom: 15px;
         cursor: pointer;
         transition: all linear .2s;
+        display: flex;
+
+        &-icon {
+            width: 40px;
+            height: 40px;
+            background-size: 20px;
+            background-image: url('../../../src/assets/icons/list.png');
+            background-repeat: no-repeat;
+            background-position: 8px;
+            margin-right: 20px;
+            background-color: #ffda33;
+            background-position: 10px;
+        }
     }
+
     &-item:hover {
         background: #f7f7f7;
-      }
-    &-img {
-        width: 48px;
-        height: 48px;
-        display: inline;
-        margin-right: 20px;
     }
+
     &-title {
-        display: inline;
         color: #000;
+        transform: translateY(20%);
     }
 }
