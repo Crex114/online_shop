@@ -16,10 +16,12 @@ const DeviceList = observer(() => {
 
     return (
         <div className="row">
-            <div className="device-list">
-                {filteredDevices.map(device =>
-                    <DeviceItem key={device.id} device={device} />
-                )}
+            <div className='device'>
+                <div className="device-list">
+                    {filteredDevices.map(device =>
+                        <DeviceItem key={device.id} device={device} />
+                    )}
+                </div>
             </div>
         </div>
     );
