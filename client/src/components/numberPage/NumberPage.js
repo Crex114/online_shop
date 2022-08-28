@@ -18,9 +18,8 @@ const NumberPage = observer(() => {
                 {pages.map(page =>
                     <button className='number-page__item'
                         key={page}
-                        active={device.page === page ? 1 : 0}
-                        onClick={() => device.setPage(page)}
-                    >
+                        data-active={device.page === page ? 1 : 0}
+                        onClick={() => device.setPage(page)}>
                         {page}
                     </button>
                 )}

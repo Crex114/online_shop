@@ -38,7 +38,7 @@ const NavBar = observer(() => {
                     <span>Каталог</span>
                 </div>
                 <div className="header__search">
-                    <form action="">
+                    <form>
                         <input type="text" placeholder='Поиск' onChange={handleNameChange} />
                         <button type='submit'></button>
                     </form>

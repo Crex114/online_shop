@@ -5,6 +5,7 @@
         cursor: pointer;
         transition: all linear .2s;
         display: flex;
+        border-radius: 5px;
 
         &-icon {
             width: 40px;
@@ -26,5 +27,6 @@
     &-title {
         color: #000;
         transform: translateY(20%);
+        padding-left: 10px;
     }
 }
