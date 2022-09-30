@@ -1,5 +1,6 @@
 .idea
 /node_modules
+/client/dist
 /client/node_modules
 /client/.pnp
 /client/.pnp.js
